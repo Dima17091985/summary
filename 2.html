@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+
+.button:hover {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<h2>Темный режим</h2>
+<button class="button" id="darkModeButton">Включить темный режим</button>
+
+<script>
+var button = document.getElementById("darkModeButton");
+button.addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    button.textContent = "Включить светлый режим";
+  } else {
+    button.textContent = "Включить темный режим";
+  }
+});
+</script>
+
+</body>
+</html>
