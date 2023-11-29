@@ -8,11 +8,23 @@ button.addEventListener("click", function () {
         button.textContent = "wb_sunny";
 
         mainElement.style.backgroundColor = "rgb(50, 50, 50)";
+        mainElement.style.transition = "background-color 0.8s";
         profileImgElement.src = "image/profile2.jpg";
+        profileImgElement.style.transition = "opacity 0.8s";
+        profileImgElement.style.opacity = "0";
+        setTimeout(function () {
+            profileImgElement.style.opacity = "1";
+        }, 100);
     } else {
         button.textContent = "nightlight";
 
         mainElement.style.backgroundColor = "rgb(255, 255, 255)";
-        profileImgElement.src = "image/profile.jpg";
+        mainElement.style.transition = "background-color 0.8s";
+        profileImgElement.style.transition = "opacity 0.8s";
+        profileImgElement.style.opacity = "0";
+        setTimeout(function () {
+            profileImgElement.src = "image/profile.jpg";
+            profileImgElement.style.opacity = "1";
+        }, 100);
     }
 });

@@ -168,11 +168,17 @@ h2 {
 	
 }
 
+.tabIcons4{
+	text-align: right;
+}
+
 .icons4{
 	vertical-align: bottom;
 	padding: 20px;
 	/* position: absolute; */
 	cursor: pointer;
+	
+
 	/* background-color: #008CBA; */
 	/* display: grid; */
 	/* justify-content: center; */
