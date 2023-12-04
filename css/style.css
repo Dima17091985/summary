@@ -2,8 +2,7 @@
 
 body {
 	display: grid;
-
-	grid-template-rows: auto;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 
 		"sidebar main";
@@ -15,19 +14,26 @@ body {
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
 	justify-content: center;
+	border: 2px solid black; 
+     /* padding: 20px;
+	 margin: 20px 1000px 10px 1000px; */
+	
 }
 
 main {
 	grid-area: main;
 	background: #fff;
 	padding: 20px;
+	 width: 60%; 
 }
 
 aside {
 	grid-area: sidebar;
 	background: #f8f9fa;
 	padding: 20px;
-}
+	/width: 50%; 
+
+
 
 
 .profile-img {
@@ -138,11 +144,11 @@ aside {
 }
 
 .p2 {
-    font-size: 19px;
-    letter-spacing: 1px;
-    word-spacing: 8px;
-    line-height: 20px;
-    margin-top: 36px;
+	font-size: 19px;
+	letter-spacing: 1px;
+	word-spacing: 8px;
+	line-height: 20px;
+	margin-top: 36px;
 	line-height: 1.6;
 }
 
